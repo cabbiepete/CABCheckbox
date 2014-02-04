@@ -22,6 +22,10 @@
 		7E9A407F18A19C5E0016DA98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E9A405E18A19C5E0016DA98 /* UIKit.framework */; };
 		7E9A408718A19C5E0016DA98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E9A408518A19C5E0016DA98 /* InfoPlist.strings */; };
 		7E9A408918A19C5E0016DA98 /* CABCheckboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A408818A19C5E0016DA98 /* CABCheckboxTests.m */; };
+		7E9A409518A19C9C0016DA98 /* CABCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A409418A19C9C0016DA98 /* CABCheckbox.m */; };
+		7E9A40A318A1A0480016DA98 /* CABCheckbox.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7E9A40A018A1A0480016DA98 /* CABCheckbox.podspec */; };
+		7E9A40A418A1A0480016DA98 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E9A40A118A1A0480016DA98 /* README.md */; };
+		7E9A40A518A1A0480016DA98 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7E9A40A218A1A0480016DA98 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		7E9A408418A19C5E0016DA98 /* CABCheckboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CABCheckboxTests-Info.plist"; sourceTree = "<group>"; };
 		7E9A408618A19C5E0016DA98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E9A408818A19C5E0016DA98 /* CABCheckboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CABCheckboxTests.m; sourceTree = "<group>"; };
+		7E9A409318A19C9C0016DA98 /* CABCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABCheckbox.h; sourceTree = "<group>"; };
+		7E9A409418A19C9C0016DA98 /* CABCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABCheckbox.m; sourceTree = "<group>"; };
+		7E9A40A018A1A0480016DA98 /* CABCheckbox.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CABCheckbox.podspec; sourceTree = SOURCE_ROOT; };
+		7E9A40A118A1A0480016DA98 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		7E9A40A218A1A0480016DA98 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +123,7 @@
 		7E9A406018A19C5E0016DA98 /* CABCheckbox */ = {
 			isa = PBXGroup;
 			children = (
+				7E9A409218A19C880016DA98 /* Classes */,
 				7E9A406918A19C5E0016DA98 /* CABAppDelegate.h */,
 				7E9A406A18A19C5E0016DA98 /* CABAppDelegate.m */,
 				7E9A406C18A19C5E0016DA98 /* Main_iPhone.storyboard */,
@@ -129,6 +139,9 @@
 		7E9A406118A19C5E0016DA98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E9A40A018A1A0480016DA98 /* CABCheckbox.podspec */,
+				7E9A40A118A1A0480016DA98 /* README.md */,
+				7E9A40A218A1A0480016DA98 /* LICENSE */,
 				7E9A406218A19C5E0016DA98 /* CABCheckbox-Info.plist */,
 				7E9A406318A19C5E0016DA98 /* InfoPlist.strings */,
 				7E9A406618A19C5E0016DA98 /* main.m */,
@@ -153,6 +166,15 @@
 				7E9A408518A19C5E0016DA98 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E9A409218A19C880016DA98 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E9A409318A19C9C0016DA98 /* CABCheckbox.h */,
+				7E9A409418A19C9C0016DA98 /* CABCheckbox.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9A40A418A1A0480016DA98 /* README.md in Resources */,
 				7E9A407118A19C5E0016DA98 /* Main_iPad.storyboard in Resources */,
 				7E9A407618A19C5E0016DA98 /* Images.xcassets in Resources */,
+				7E9A40A518A1A0480016DA98 /* LICENSE in Resources */,
+				7E9A40A318A1A0480016DA98 /* CABCheckbox.podspec in Resources */,
 				7E9A406E18A19C5E0016DA98 /* Main_iPhone.storyboard in Resources */,
 				7E9A406518A19C5E0016DA98 /* InfoPlist.strings in Resources */,
 			);
@@ -255,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E9A406718A19C5E0016DA98 /* main.m in Sources */,
+				7E9A409518A19C9C0016DA98 /* CABCheckbox.m in Sources */,
 				7E9A406B18A19C5E0016DA98 /* CABAppDelegate.m in Sources */,
 				7E9A407418A19C5E0016DA98 /* CABViewController.m in Sources */,
 			);
@@ -475,6 +501,7 @@
 				7E9A408E18A19C5E0016DA98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E9A408F18A19C5E0016DA98 /* Build configuration list for PBXNativeTarget "CABCheckboxTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +510,7 @@
 				7E9A409118A19C5E0016DA98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
